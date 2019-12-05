@@ -41,11 +41,38 @@ En sortie: [
 ]
 
  */
+const eatings = [
+  {
+    food: "Bacon",
+    isVegetarian: false
+  },
+  {
+    food: "Sausage",
+    isVegetarian: false
+  },
+  {
+    food: "Tofu",
+    isVegetarian: true
+  },
+  {
+    food: "Chick Pea",
+    isVegetarian: true
+  }
+];
 
-function getFoodCategories(foods) {
+function getFoodCategories(eatings, isVegetarian) {
+  const newEating = eatings.map(eating => {
+    console.log(isVegetarian, "vjdge");
+    return (
+      eating.food +
+      " " +
+      (eating.isVegetarian ? "is" : "is not") +
+      " suitable for vegetarians"
+    );
+  });
+
+  return newEating;
 }
-
-
 
 // Ne pas modifier l'export
 module.exports = getFoodCategories;
