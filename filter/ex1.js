@@ -10,10 +10,11 @@ Sortie attendue:
   [7, 2, 0, 3, 11]
 
  */
-
+const numbers = [7, -4, 2, 0, -10, 3, 11];
 function getPositiveNumbers(numbers) {
+  numbers.filter(n => n > 0);
 }
-
+return getPositiveNumbers(numbers);
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
 // mais alors, il faut alors lancer l'exercice avec node filter/ex1
 // console.log(getPositiveNumbers([-2, -1, 0, 1, 2]));
