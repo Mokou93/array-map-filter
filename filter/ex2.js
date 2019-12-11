@@ -22,17 +22,18 @@ Sortie attendue:
   ['Bran Stark', 'Arya Stark', 'Sansa Stark']
 
  */
-// const gotCaracters = [
-//   "Bran Stark",
-//   "Cersei Lannister",
-//   "Sandor Clegane",
-//   "Arya Stark",
-//   "Yara Greyjoy",
-//   "Sansa Stark"
-// ];
-// function keepStarks(gotCaracters) {
-//   gotCaracters.filter(x => x.endsWith("Stark"));
-// }
-// return keepStarks(gotCaracters);
-// // Ne pas modifier l'export
-// module.exports = keepStarks;
+const gotCaracters = [
+  "Bran Stark",
+  "Cersei Lannister",
+  "Sandor Clegane",
+  "Arya Stark",
+  "Yara Greyjoy",
+  "Sansa Stark"
+];
+function keepStarks(gotCaracters) {
+  const starkCaracters = gotCaracters.filter(x => x.endsWith(" Stark"));
+  return starkCaracters;
+}
+
+// Ne pas modifier l'export
+module.exports = keepStarks;
